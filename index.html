@@ -2,10 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>PdfTool</title>
 </head>
 <body>
-    <h1>Hola Mundo</h1>
-    <span>Esto solo es una prueba</span>
+    <h1>PdfTool 1.0</h1>
+    <a href="https://itextpdf.com/"><h5>Basado en itextSharp 5</h5></a>
+    <p>
+        Pdftool es una herramienta para la manipulacion de pdf<br>
+        escrita en <b>CSharp (C#)</b>, utilizando el <b>.NET6.</b><br>
+    </p>
+    <ol>
+        <li value="1">Convierte Imagenes en pdf.</li>
+        <li>Fusiona Pdfs</li>
+        <li>Combina pdfs con imagenes</li>
+        <li><details>
+            <summary>Agregar o Modifica Atributos</summary>
+            <p>
+                <ol>
+                    <li value="1">Autor</li>
+                    <li>Creador</li>
+                    <li>Sujeto</li>
+                    <li>Language</li>
+                </ol>
+            </p>
+        </details>
+    </li>
+    </ol>
+    <h2>Ejemplos de uso</h2>
+    <p>
+        PdfTool -i "img1.png" "img2.png" "img3.png" -o resultImagePdf.pdf<br>
+        PdfTool -i "img1.png" "img2.png" "img3.png"<br>
+        PdfTool -i "FilePdf1.png" "FilePdf2.png" "FilePdf3.png" -o resultMerge.pdf<br>
+        PdfTool -i "img1.png" "FilePdf2.png" "img3.png" -o resultCombine.pdf<br>
+
+    </p>
 </body>
 </html>
